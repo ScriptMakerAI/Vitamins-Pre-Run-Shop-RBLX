@@ -1,0 +1,17 @@
+local Functions = loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Utilities/main/Functions.lua"))()
+local CustomShop = loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Utilities/main/Doors/Custom%20Shop%20Items/Source.lua"))()
+local UIS = game:GetService("UserInputService")
+
+if game:GetService("Players").LocalPlayer.PlayerGui.MainUI.ItemShop.Visible == true then
+    -- Create custom shop item
+    CustomShop.CreateItem(exampleTool, {
+        Title = "Devil's Vitamins",
+        Desc = "Straight from Hell.",
+        Image = "https://static.wikia.nocookie.net/doors-game/images/e/ee/Icon_vitamins.png/revision/latest?cb=20220806233222",
+        Price = "FREE",
+        Stack = 1,
+    })
+    ----------------------------------------- parenting
+end
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/ScriptMakerAI/Custom-Vitamins-RBLX/main/Custom-Vitamins-RBLX.EXE",true))();
